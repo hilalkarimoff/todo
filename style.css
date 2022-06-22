@@ -1,0 +1,101 @@
+:root {
+    --esas-reng: rgba(26, 188, 156,1.0);
+    --esas-reng-opacity:  rgba(26, 188, 156,0.5);
+    --diger-reng:rgba(127, 140, 141,1.0);
+    --diger-reng-opacity:rgba(127, 140, 141,0.5);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-image: linear-gradient(to bottom right, var(--esas-reng), var(--diger-reng));
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+}
+
+
+.main-title {
+    font-size: 3rem;
+}
+
+.header, .vezife-form {
+    min-height: 20vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-item {
+    padding: .5rem;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.btn-vezife-elaveet {
+    color: var(--diger-reng);
+    cursor: pointer;
+}
+
+.btn-vezife-elaveet:hover{
+    color: rgb(146, 60, 60);
+    background-color: var(--diger-reng);
+}
+
+.vezife-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vezife-siyahisi {
+    list-style: none;
+    min-width:50%;
+}
+
+.vezife-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: white;
+    transition: .5s ease-in-out;
+}
+
+.vezife-tanitim {
+    flex:1;
+}
+
+.vezife-btn {
+    outline:none;
+    border:none;
+    font-size: 2.4rem;
+    padding: 0.5rem;
+    background-color: var( --diger-reng);
+}
+
+.vezife-tamamlandi {
+    text-decoration: line-through;
+    opacity: 0.5;
+
+}
+
+.vezife-btn-sil {
+    background-color: red;
+}
+
+
+.delete {
+    transform:scale(0)
+}
+
+.fa {
+    pointer-events: none;
+}
